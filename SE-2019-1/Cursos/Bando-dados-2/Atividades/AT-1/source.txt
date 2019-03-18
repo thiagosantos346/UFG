@@ -1,0 +1,12 @@
+Aluno: Thiago dos Santos Silva;
+Matricula: 201705644
+Data: 18/03/2019
+Atividade: Revisão - Algoritmos e Estrutura de Dados 1.
+
+1)
+
+Foram abordado os seguintes topicos:
+-Complexidade de Algorimos;
+-Recursividade;
+-Algoritmos de ordenação;
+	-M
