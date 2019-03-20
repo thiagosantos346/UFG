@@ -97,7 +97,15 @@ Atividade: Revisão - Algoritmos e Estrutura de Dados 1.
 			Este algoritmo usa o metodo dividir e conquistar.
 				Divisão com tempo X;
 				conquistar com tempo Y;
-				Combinação com tempo K;
+				Combinação com tempo K;]
+
+				limite superior para merge sort é n log n.
+				OMEGA(g(n)) = { f(n) : Esistem Constantes positivas c e n0, tais que 0 <= c*g(n) <=  f(n) para todo n >= n0 }.
+				teorema 3.1 pagina 37 cormem 3 ed
+
+				sendo assim a*(n log n) + b*n + c para todas constantes a, b e c, onde a > 0 implica dizer que  a*(n lg n ) + b*n + c = Omega(n lg n)
+				e a*(n lg n) + b + c = O(n lg n); o que é uma contradição sendo assim Omega(n);
+
 
 	};
 
