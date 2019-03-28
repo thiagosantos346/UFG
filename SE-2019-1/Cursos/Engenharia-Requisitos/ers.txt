@@ -1,0 +1,23 @@
+O autor retrata o livro como um método para ajudar a desenvolver habilidades que facilitam a construir bons softwares.
+O livro é guiados por padrões de projeto, desenvolvimento iterativo evolutivo, modelagem ágil, e processo unificado ágil.
+O objetivo central é melhorar o poder de abstração.
+Análise de projeto orientado a objetos:
+É uma investigação de soluções conceituais em perspectiva de orientação a objetos, ou seja investigar a qualidade dos artefatos gerados no levantamento de requisitos.
+
+Diagramas da UML(Linguagem de modelagem unificada, trás uma série de diagramas para modelagem de softwares e outros.) que serão usados:
+
+Casos de uso:
+descrição ou narrativa de formas de uso da aplicação conceitual.
+Modelos de domínios:
+ Diagramas na perspectivas de conceitos, atributos e relações de interesse.
+Diagramas de Iteração:
+Definem objetos de software e suas responsabilidades e colaborações, como exemplo diagrama de sequência.
+Diagramas de classe:
+Visão estática dos uma classe.
+Essa é vista em três perspectivas:
+Conceitual:
+Conceitos do mundo real.
+Software:
+Visão de como deve ser implementado.
+Implementação
+ Código em uma ou mais linguagem de programação.
