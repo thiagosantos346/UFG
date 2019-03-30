@@ -15,6 +15,10 @@ INSERT INTO Cargos (CodigoCargo, DescricaoCargo, VlrSalario ) VALUES ('C6', 'Dir
 
 INSERT INTO Cargos (CodigoCargo, DescricaoCargo, VlrSalario ) VALUES ('C7', 'Presidente', 9500.00);
 
+INSERT INTO Cargos (CodigoCargo, DescricaoCargo, VlrSalario ) VALUES ('C8', 'Scrum Master', 5600.95);
+
+INSERT INTO Cargos (CodigoCargo, DescricaoCargo, VlrSalario ) VALUES ('C9', 'Product Woner', 5600.95);
+
 
 
 -- Inserindos os Dados do Departamento --
@@ -34,6 +38,9 @@ Values ('D1', 'Assist.Técnica', 3521-2246),
 ('D6', 'Cobrança', 3521-2688)
 
 ;
+
+INSERT INTO departamentos VALUES ('D7', 'DEV', 7897);
+INSERT INTO departamentos VALUES ('D8', 'OPS', 7896);
 
 
 -- Inserindos os Dados dos Funcionarios --
@@ -62,6 +69,15 @@ Values (101, 'Luis Sampaio', '2016-08-10', 'M', 'C3', 'D5'),
 
 ;
 
+INSERT INTO funcionarios VALUES (12, 'Thiago Silva', '2015-06-02', 'M', 'C8', 'D7');
+INSERT INTO funcionarios VALUES (13, 'Marlom Silva', '2014-07-12', 'M', 'C8', 'D7');
+INSERT INTO funcionarios VALUES (201705644, 'Thiago', '2017-06-05', 'M', 'C9', 'D1');
+INSERT INTO funcionarios VALUES (201705645, 'dos', '2017-06-05', 'M', 'C9', 'D1');
+INSERT INTO funcionarios VALUES (201705646, 'Santos', '2017-06-05', 'M', 'C9', 'D1');
+INSERT INTO funcionarios VALUES (201705647, 'Silva', '2017-06-05', '1', 'C9', 'D1');
+
+
+
 -- Inserindos os Dados do Projeto --
 
 Insert Into Projetos (CodigoProjeto, DescricaoProjeto)
@@ -73,6 +89,10 @@ Values ('Projeto1', 'Suporte'),
 ('Projeto3', 'Desenvolvimento')
 
 ;
+
+INSERT INTO equipe VALUES (7, 148, 'Projeto1');
+INSERT INTO equipe VALUES (8, 22, 'Projeto2');
+
 
 -- Inserindos os Dados da Equipe --
 
@@ -91,3 +111,7 @@ Values (1, '101', 'Projeto1'),
 (6, '101', 'Projeto3')
 
 ;
+
+
+INSERT INTO public.projetos VALUES ('projeto4', 'Operação');
+INSERT INTO public.projetos VALUES ('projeto5', 'Integração');
