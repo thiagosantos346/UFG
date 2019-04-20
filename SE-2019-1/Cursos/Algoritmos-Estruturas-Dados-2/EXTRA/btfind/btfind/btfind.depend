@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1554069077 source:c:\users\thiago\desktop\btfind\btfind\main.c
+	<stdio.h>
+	<stdlib.h>
+

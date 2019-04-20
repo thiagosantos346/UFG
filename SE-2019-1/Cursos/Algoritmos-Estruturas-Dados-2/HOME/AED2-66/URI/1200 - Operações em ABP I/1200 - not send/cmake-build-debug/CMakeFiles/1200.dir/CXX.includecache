@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Workspace/UFG/SE-2019-1/Cursos/Algoritmos-Estruturas-Dados-2/URI/1200/main.cpp
+iostream
+-
+stdlib.h
+-
+

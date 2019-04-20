@@ -1,0 +1,7 @@
+Atividade supervisionada - Aula 01
+
+Faça um resumo das estruturas de dados e algoritmos estudados em AED1 (ou na disciplina equivalente a Estruturas de Dados 1).
+Para o problema da ordenação, apresente:
+um algoritmo de complexidade O(n2)
+um algoritmo de complexidade O(n log n)
+uma demonstração do limite (cota) inferior de complexidade para o problema da ordenação.

@@ -1,0 +1,110 @@
+Aluno: Thiago dos Santos Silva;
+Matricula: 201705644
+Data: 18/03/2019
+Atividade: Revisão - Algoritmos e Estrutura de Dados 1.
+
+1)Faça um resumo das estruturas de dados e algoritmos estudados em AED1 (ou na disciplina equivalente a Estruturas de Dados 1){
+		
+
+	Foram abordado os seguintes topicos:
+	-Complexidade de Algorimos;
+	-Recursividade;
+	-Algoritmos de ordenação;
+		-Selection Sort;
+		-Insertion Sort;
+		-Bublle Sort;
+		-Quick Sort;
+		-Merge Sort;
+		-Count Sort;
+		-Bucket Sort;
+		-Radix Sort;
+	-Busca Binaria;
+	-Type Abstract Data(TAD);
+	-Linked List;
+	-Linked Lists FiFo;
+	-Linked Lists FiLo;
+	-Ávores de Busca Binarias;
+	-Ávores Trie;
+
+
+}
+
+
+2)Para o problema da ordenação, apresente:{
+	
+	2.1)Um algoritmo de complexidade O(n2).{
+
+		Insertion Sort é um algorimo do tipo O(n2);
+
+	};
+
+	2.2)Um algoritmo de complexidade O(n log n).{
+
+		Merge Sort é um Algoritmo do tipo o(n log n);
+
+	};
+
+	2.3)uma demonstração do limite (cota) inferior de complexidade para o problema da ordenação.{
+
+		Demonstração de limite inferior para o Algorimo Merge Sort;
+
+		Descrição do Algoritmo, através de pseudo codigo:
+
+			Merge_sort(Array, inicio, meio, fim){
+
+				node1 = meio - fim +1;
+				node2 = fim - meio;
+				seja Esquerda[1..até..node1] e Direita[1..até..node2 + 1];
+				for( i = 0; até node1; i++ ){
+					
+					Esquerda[i] = Array[inicio + i - 1 ];
+
+
+				}
+
+				for j = 1; até node2; j++{
+
+					Direita[j] = Array[meio + 1];
+
+
+				}
+
+
+				Esquerda[node1 + 1] = null;
+				Direita[node2 + 1] = null;
+				i = 1;
+				j = 1;
+
+				for(k = incio; até meio; k++){
+
+					if(Esquerda[i] < Direita[i])
+					{
+						Array[k] = Esquerda[i];
+						i++;
+					}
+					else
+					{
+						Array[k] = R[i];
+						j++
+					}
+
+				}
+
+			};
+
+		Demonstração:
+
+			Este algoritmo usa o metodo dividir e conquistar.
+				Divisão com tempo X;
+				conquistar com tempo Y;
+				Combinação com tempo K;]
+
+				OMEGA(g(n)) = { f(n) : Esistem Constantes positivas c e n0, tais que 0 <= c*g(n) <=  f(n) para todo n >= n0 }.
+				teorema 3.1 pagina 37 cormem 3 ed
+
+	};
+
+
+}
+
+	
