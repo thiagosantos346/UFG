@@ -13,7 +13,7 @@ server.on(
     'message',
     (msg, rinfo)=>{
         var str = msg.toString();
-        str = str.toLowerCase();
+        str = str.toUpperCase();
         console.log('server got:\n'+str+'\nfrom '+rinfo.address+':'+rinfo.port);
     }
 );
