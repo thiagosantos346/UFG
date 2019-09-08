@@ -1,34 +1,22 @@
-const dgram = require('dgram');
-const server = dgram.createSocket('udp4');
-// fonte http://code.krister.ee/node-js-encode-decode-hex-and-publishing-data-to-the-bitcoin-blockchain/
-server.on(
-    'error',
-    (err)=>{
-        console.log('server error:\n$'+err.stack);
-        server.close();
+var http = require('http');
+var url = require('url');
+var fs = require('fs');
+//https://www.w3schools.com/nodejs/nodejs_filesystem.asp
+
+http.createServer(
+    (req, res) =>{
+        var request_url = url.parse(req.url, true);
+        var filename = "."+ request_url.pathname;
+        fs.readFile(
+             filename
+            ,(err, data) =>{
+                if(err){
+                    res.writeHead(404, {'content-Type' : 'text\html'});
+                    return res.end('404 not Found');
+                }
+                res.writeHead(200, {'ContentType' : 'text\html'});
+                res.write(data);
+            }
+        );
     }
-);
-
-server.on(
-    'message',
-    (msg, rinfo)=>{
-        console.log(msg);
-        var buffer = Buffer.from(msg, 'hex').toString();
-        console.log('server got:\n'+buffer+'\nfrom '+rinfo.address+':'+rinfo.port);
-    }
-);
-
-server.on(
-    'listening',
-    ()=>{
-        const address = server.address();
-        console.log('server listening: '+address.address+':'+address.port+'.');
-    }
-)
-
-server.bind({
-    address : 'localhost',
-    port : '8081',
-    exclusive : true
-});
-
+).listen({port:8080, host : 'localhost'});
