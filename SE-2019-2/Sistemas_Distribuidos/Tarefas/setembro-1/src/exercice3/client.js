@@ -16,9 +16,7 @@ function Command() {
 			var object  = '{"type":"disconnect"}';
 			console.log('Appuyez sur "Ctrl + C" pour terminer.');
 		} else {
-			var str = message.toString();
-			var str = str.toLowerCase();
-			var object  = str;
+			var object  = message;
 		}
 
 	 	var buffer  = new Buffer(object);

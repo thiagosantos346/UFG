@@ -12,7 +12,9 @@ server.on(
 server.on(
     'message',
     (msg, rinfo)=>{
-        console.log('server got:\n'+msg+'\nfrom '+rinfo.address+':'+rinfo.port);
+        var str = msg.toString();
+        str = str.toLowerCase();
+        console.log('server got:\n'+str+'\nfrom '+rinfo.address+':'+rinfo.port);
     }
 );
 
