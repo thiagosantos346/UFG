@@ -15,7 +15,15 @@ http.createServer(
                     return res.end('404 not Found');
                 }
                 res.writeHead(200, {'ContentType' : 'text\html'});
-                res.write(data);
+                //res.write(data);
+                fs.stat(
+                     data 
+                    ,(err, stats) =>{
+                        //res.write(stats.isDirectory());
+                        res.write(stats);
+                    }
+                );
+
             }
         );
     }

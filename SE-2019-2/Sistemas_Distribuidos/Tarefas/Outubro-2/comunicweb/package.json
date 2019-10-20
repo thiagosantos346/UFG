@@ -1,0 +1,24 @@
+{
+  "name": "comunicweb",
+  "version": "1.0.0",
+  "description": "isssue of home, ajax.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "thiagosantos346"
+  },
+  "keywords": [
+    "basic",
+    "ajax"
+  ],
+  "author": "Silva Thiago",
+  "license": "ISC"
+}
