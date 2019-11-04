@@ -17,7 +17,7 @@ function Square(props){
     }, [props.value])
     
     const handleClick = () =>{
-        props.handleClick(props.id)
+      props.handleClick(props.id)
     }
 
     return(
